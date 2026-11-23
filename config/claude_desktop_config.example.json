@@ -1,0 +1,47 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\<you>\\files_claude"
+      ]
+    },
+    "excel-mcp-server": {
+      "command": "npx",
+      "args": ["--yes", "@negokaz/excel-mcp-server"],
+      "env": {
+        "EXCEL_MCP_PAGING_CELLS_LIMIT": "4000"
+      }
+    },
+    "rest-api": {
+      "command": "npx",
+      "args": ["-y", "dkmaker-mcp-rest-api"],
+      "env": {
+        "REST_BASE_URL": "https://rahulshettyacademy.com",
+        "HEADER_Accept": "application/json"
+      }
+    },
+    "mysql": {
+      "command": "C:\\Users\\<you>\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\uv.exe",
+      "args": [
+        "--directory",
+        "C:\\Users\\<you>\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages",
+        "run",
+        "mysql_mcp_server"
+      ],
+      "env": {
+        "MYSQL_HOST": "127.0.0.1",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "root",
+        "MYSQL_PASSWORD": "YOUR_MYSQL_PASSWORD",
+        "MYSQL_DATABASE": "vikhyatacademy"
+      }
+    }
+  }
+}
