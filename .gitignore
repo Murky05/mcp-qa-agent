@@ -1,0 +1,13 @@
+# Never commit real credentials
+claude_desktop_config.json
+*.bak
+.env
+mysql-init.txt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Office temp files
+~$*.xlsx
