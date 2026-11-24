@@ -1,0 +1,4 @@
+# Dev/test dependencies for the registration site.
+# The unit tests stub out mysql.connector, so only pytest is required to run them:
+#   python -m pytest registration-site/tests
+pytest>=7.0
